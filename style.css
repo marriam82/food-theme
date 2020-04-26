@@ -1,0 +1,378 @@
+.container
+{
+	margin:0px;
+	padding:0px;
+
+	list-style:none;
+	width:100%;
+	
+	position:relative;
+}
+.nav
+{
+	width:100%;
+	height:20vh;
+	text-transform:uppercase;
+	
+}
+.nav h1
+{
+	text-align:center;
+	margin:2% 0%;
+	font-size:45px;
+	animation-name:h1;
+	animation-delay:1s;
+	animation-duration:3s;
+	position:relative;
+	opacity:0;
+	animation-fill-mode:forwards;
+}
+@keyframes h1
+{
+	from{top:-100px;}
+	to{top:10px;opacity:1}
+}
+.nav ul
+{
+	width:60%;
+	position:relative;
+
+	left:25%;
+	top:25%;
+	list-style:none;
+	animation-name:ul;
+	animation-duration:1s;
+	animation-delay:2s;
+	opacity:0;
+	animation-fill-mode:forwards;
+}
+@keyframes ul
+{
+	from{top:-200px;}
+	to{top:30px;opacity:1;}
+	
+}
+	a{
+		text-decoration:none;
+	}
+
+.nav ul li 
+{
+	float:left;
+	margin-left:7%;
+	font-size:22px;
+}
+.clear
+{
+	clear:both;
+}
+.nav ul li:hover
+{
+	transform:scale(1.5);
+	transition-duration:2s;
+}
+.foodimg
+{
+	width:50%;
+	height:60vh;
+	margin-top:10vh;
+	background-image:url('fastfoodssss/images.jpg');
+	background-size:100% 100%;
+	border:none;
+	animation-name:food;
+	animation-duration:3s;
+	animation-fill-mode:forwards;
+	position:relative;
+	animation-delay:3s;
+transition-duration:3s;
+transition-property:all;
+opacity:0;
+}
+@keyframes food
+{
+	from{left:-600px;}
+	to{left:0px;opacity:1;}
+}
+.foodimg:hover
+{
+transform: scale(0.9);
+
+}
+.food-order
+{
+	width:30%;
+	height:60vh;
+	position:absolute;
+	top:34vh;
+	right:100px;
+	text-align:center;
+	
+
+}
+
+.food-order h1
+{
+	text-transform:uppercase;
+	font-size:50px;
+	margin:4% auto;
+	font-family: 'Poppins', sans-serif;
+	animation-name:foodies;
+	animation-delay:4s;
+	animation-duration:2s;
+	position:relative;
+animation-fill-mode:forwards;
+opacity:0;
+}
+@keyframes foodies
+{
+from{right:-700px;}
+	to{right:10px;opacity:1;}
+	
+}
+.food-order p
+{
+
+	width:70%;
+	font-size:15px;
+	color:#323232;
+	margin:10px auto;
+	
+    position:relative;
+	animation-name:p1;
+	animation-duration:2s;
+	animation-delay:5s;
+	animation-fill-mode:forwards;
+	opacity:0;
+	
+}	
+@keyframes p1
+{
+	from{right:-700px;}
+	to{right:10px;opacity:1;}
+}
+.food-order button
+{
+	width:40%;
+	height:10%;
+	border-radius:20px;
+	border:none;
+	outline-style:none;
+	text-transform:uppercase;
+	font-size:20px;
+	background-image:linear-gradient(to left, teal,transparent);
+	animation-name:button;
+    position:relative;
+	animation-duration:2s;
+	animation-delay:6s;
+	animation-fill-mode:forwards;
+	 opacity:0;
+}
+@keyframes button
+{
+	from{right:-700px;}
+	to{right:10px;opacity:1;} 
+}
+.food-order:button:hover
+{
+	cursor:pointer;
+	background-image:linear-gradient(to right, teal ,transparent );
+	color:whitesmoke;
+	box-shadow: 5px -5px 2px 3px black;
+    transition-duration:2s
+}
+.food-order:hover
+{
+	transform:scale(.9);
+	transition-duration:3s;
+}
+.products
+{
+	position:relative;
+	height:120vh;
+	
+}
+.products h1
+{
+	text-align:center;
+	margin:6% 0%;
+	font-size:45px;
+	text-transform:uppercase;
+	font-family: 'Poppins', sans-serif;
+}
+.c1
+{
+	height:300px;
+	width:250px;
+	transition:4s;
+	float:left;
+	margin-left:70px;
+	margin-bottom:7%;
+	border-radius:20px;
+}
+.c1:nth-child(2)
+{
+	background-image:url('fastfoodssss/big.jpg');
+	background-size:100% 100%;
+	transform:rotate(-10deg);
+}
+.c1:nth-child(3)
+{
+	background-image:url('fastfoodssss/samosa.jpg');
+	background-size:100% 100%;
+	transform:rotate(10deg);
+}
+.c1:nth-child(4)
+{
+	background-image:url('fastfoodssss/image.jpg');
+	background-size:100% 100%;
+	transform:rotate(-10deg);
+}
+.c1:nth-child(5)
+{
+	background-image:url('fastfoodssss/d.jpg');
+	background-size:100% 100%;
+	transform:rotate(10deg);
+}
+.c1:nth-child(6)
+{
+	background-image:url('fastfoodssss/pizza.jpg');
+	background-size:100% 100%;
+	transform:rotate(-10deg);
+}
+.c1:nth-child(7)
+{
+	background-image:url('fastfoodssss/juice.jpg');
+	background-size:100% 100%;
+	transform:rotate(10deg);
+}
+.c1:nth-child(8)
+{
+	background-image:url('fastfoodssss/chocolates.jpg');
+	background-size:100% 100%;
+	transform:rotate(-10deg);
+}
+.c1:nth-child(9)
+{
+	background-image:url('fastfoodssss/juices.jpg');
+	background-size:100% 100%;
+	transform:rotate(10deg);
+}
+
+.c1:hover
+{
+	transform:rotate(0deg);
+	transform:scale(1.2);
+	transition-duration:2s;
+	box-shadow:5px -10px 3px -2px;
+}
+.c2:hover
+{
+	transform:rotate(0deg);
+	transform:scale(.9);
+	transition-duration:2s;
+}
+.portfolio
+{
+	position:relative;
+	height:120vh;
+	
+}
+.portfolio h1
+{
+text-align:center;
+	margin:6% 0%;
+	font-size:45px;
+	text-transform:uppercase;
+	font-family: 'Poppins', sans-serif;
+}
+.d1
+{
+	height:300px;
+	width:250px;
+	transition:4s;
+	float:left;
+	margin-left:70px;
+	margin-bottom:7%;
+	border-radius:20px;
+}
+.d1:nth-child(2)
+{
+	background-image:url('fastfoodssss/s.jpg');
+	background-size:100% 100%;
+	transform:rotate(-10deg);
+}
+.d1:nth-child(3)
+{
+	background-image:url('fastfoodssss/o.jpg');
+	background-size:100% 100%;
+	transform:rotate(10deg);
+}
+.d1:nth-child(4)
+{
+	background-image:url('fastfoodssss/i.jpg');
+	background-size:100% 100%;
+	transform:rotate(-10deg);
+}
+.d1:nth-child(5)
+{
+	background-image:url('fastfoodssss/j.jpg');
+	background-size:100% 100%;
+	transform:rotate(10deg);
+}
+.d1:nth-child(6)
+{
+	background-image:url('fastfoodssss/j.jpg');
+	background-size:100% 100%;
+	transform:rotate(-10deg);
+}
+.d1:nth-child(7)
+{
+	background-image:url('fastfoodssss/q.jpg');
+	background-size:100% 100%;
+	transform:rotate(10deg);
+}
+.d1:nth-child(8)
+{
+	background-image:url('fastfoodssss/o.jpg');
+	background-size:100% 100%;
+	transform:rotate(-10deg);
+}
+.d1:nth-child(9)
+{
+	background-image:url('fastfoodssss/o.jpg');
+	background-size:100% 100%;
+	transform:rotate(10deg);
+}
+.d1:hover
+{
+	transform:rotate(0deg);
+	transform:scale(1.2);
+	transition-duration:2s;
+	box-shadow:5px -10px 3px -2px;
+	
+}
+.d2:hover 
+{
+	transform:rotate(0deg);
+	transform:scale(.9);
+	transition-duration:2s;
+	
+}
+.p1
+{
+	font-size:20px;
+	font-weight:bold;
+	
+	
+}
+.p2
+{
+	font-size:20px;
+	font-weight:bold;
+	color:black;
+}
+.p3
+{
+	color:black;
+	margin-top:300px;
+}
